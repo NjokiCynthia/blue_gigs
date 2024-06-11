@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "1070543559433",
-    "project_id": "easy-rent-1537b",
-    "storage_bucket": "easy-rent-1537b.appspot.com"
+    "project_number": "360366577764",
+    "project_id": "household-support-82218",
+    "storage_bucket": "household-support-82218.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1070543559433:android:73fcc64ca763e52735d1d8",
+        "mobilesdk_app_id": "1:360366577764:android:91c3469d3dd52fa993a771",
         "android_client_info": {
           "package_name": "com.example.easy_rent"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "1070543559433-ihj70joqj2nl95ek9prbum0gkm28brl6.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDG2V2DT5o4LrREOhaNXJbsXhYCABhBDZ4"
+          "current_key": "AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1070543559433-ihj70joqj2nl95ek9prbum0gkm28brl6.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

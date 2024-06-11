@@ -41,19 +41,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAQiDjIlWj3uGlVgGquGN_pvmLjqsPwwRY',
-    appId: '1:1070543559433:web:57fcbdc2251237a735d1d8',
-    messagingSenderId: '1070543559433',
-    projectId: 'easy-rent-1537b',
-    authDomain: 'easy-rent-1537b.firebaseapp.com',
-    storageBucket: 'easy-rent-1537b.appspot.com',
+    apiKey: 'AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs',
+    appId: '1:360366577764:android:91c3469d3dd52fa993a771',
+    messagingSenderId: '360366577764',
+    projectId: 'household-support-82218',
+    authDomain: 'household-support-82218.firebaseapp.com',
+    storageBucket: 'household-support-82218.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDG2V2DT5o4LrREOhaNXJbsXhYCABhBDZ4',
-    appId: '1:1070543559433:android:73fcc64ca763e52735d1d8',
-    messagingSenderId: '1070543559433',
-    projectId: 'easy-rent-1537b',
-    storageBucket: 'easy-rent-1537b.appspot.com',
+    apiKey: 'AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs',
+    appId: '1:360366577764:android:91c3469d3dd52fa993a771',
+    messagingSenderId: '360366577764',
+    projectId: 'household-support-82218',
+    storageBucket: 'household-support-82218.appspot.com',
   );
 }

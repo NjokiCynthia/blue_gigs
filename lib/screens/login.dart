@@ -45,137 +45,139 @@ class _LoginPageState extends State<LoginPage> {
           }),
         ],
       ),
-      body: Column(
-        children: [
-          ClipPath(
-            clipper: LoginShapeClipper(),
-            child: Container(
-              color: Colors.blueGrey,
-              height: MediaQuery.of(context).size.height * .45,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ClipPath(
+              clipper: LoginShapeClipper(),
+              child: Container(
+                color: Colors.blueGrey,
+                height: MediaQuery.of(context).size.height * .45,
+              ),
             ),
-          ),
-          Center(
-            child: Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                      left: 10.0, right: 10.0, bottom: 10.0, top: 0.0),
-                  child: TextField(
-                    keyboardType: TextInputType.emailAddress,
-                    controller: emailctrl,
-                    decoration: InputDecoration(
-                      labelText: "User Name/Email",
-                      prefixIcon: Icon(Icons.person_outline),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.grey,
-                        ),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(4.0),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding:
-                      EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-                  child: TextField(
-                    obscureText: true,
-                    keyboardType: TextInputType.text,
-                    controller: passwordctrl,
-                    decoration: InputDecoration(
-                      labelText: "Password",
-                      prefixIcon: Icon(Icons.lock),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.grey,
-                        ),
-                        borderRadius: BorderRadius.circular(4.0),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 35.0,
-                ),
-                Center(
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * .35,
-                    child: Consumer(
-                      builder: (context, ref, child) {
-                        return ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blue,
-                            padding: EdgeInsets.all(5.0),
+            Center(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                        left: 10.0, right: 10.0, bottom: 10.0, top: 0.0),
+                    child: TextField(
+                      keyboardType: TextInputType.emailAddress,
+                      controller: emailctrl,
+                      decoration: InputDecoration(
+                        labelText: "User Name/Email",
+                        prefixIcon: Icon(Icons.person_outline),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.grey,
                           ),
-                          child: Text(
-                            "Submit",
-                            style: TextStyle(
-                              fontSize: 30.0,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(4.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+                    child: TextField(
+                      obscureText: true,
+                      keyboardType: TextInputType.text,
+                      controller: passwordctrl,
+                      decoration: InputDecoration(
+                        labelText: "Password",
+                        prefixIcon: Icon(Icons.lock),
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(
+                            color: Colors.grey,
+                          ),
+                          borderRadius: BorderRadius.circular(4.0),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 35.0,
+                  ),
+                  Center(
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * .35,
+                      child: Consumer(
+                        builder: (context, ref, child) {
+                          return ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.blue,
+                              padding: EdgeInsets.all(5.0),
                             ),
-                          ),
-                          onPressed: () {
-                            signIn(
-                              emailctrl.text.toString(),
-                              passwordctrl.text.toString(),
-                            ).then((value) {
-                              Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(
-                                  builder: (context) => Homepage(),
-                                ),
-                              );
-                            }).onError((error, stackTrace) {}
-                                //     ScaffoldMessenger.of(context).showSnackBar(
-                                //   SnackBar(
-                                //     content: Text(
-                                //       error.toString(),
-                                //     ),
-                                //   ),
-                                //),
+                            child: Text(
+                              "Submit",
+                              style: TextStyle(
+                                fontSize: 30.0,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                              ),
+                            ),
+                            onPressed: () {
+                              signIn(
+                                emailctrl.text.toString(),
+                                passwordctrl.text.toString(),
+                              ).then((value) {
+                                Navigator.of(context).pushReplacement(
+                                  MaterialPageRoute(
+                                    builder: (context) => Homepage(),
+                                  ),
                                 );
-                          },
-                        );
-                      },
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20.0),
-                  child: RichText(
-                    text: TextSpan(
-                      text: "Don't have an account yet?",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 22.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      children: [
-                        TextSpan(
-                          text: "SignUp",
-                          style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 28.0,
-                              fontWeight: FontWeight.w900),
-                          recognizer: TapGestureRecognizer()
-                            ..onTap = () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => registerScreen()),
-                              );
+                              }).onError((error, stackTrace) {}
+                                  //     ScaffoldMessenger.of(context).showSnackBar(
+                                  //   SnackBar(
+                                  //     content: Text(
+                                  //       error.toString(),
+                                  //     ),
+                                  //   ),
+                                  //),
+                                  );
                             },
-                        ),
-                      ],
+                          );
+                        },
+                      ),
                     ),
                   ),
-                ),
-              ],
+                  Padding(
+                    padding: EdgeInsets.only(top: 20.0),
+                    child: RichText(
+                      text: TextSpan(
+                        text: "Don't have an account yet?",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        children: [
+                          TextSpan(
+                            text: "SignUp",
+                            style: TextStyle(
+                                color: Colors.blue,
+                                fontSize: 28.0,
+                                fontWeight: FontWeight.w900),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => registerScreen()),
+                                );
+                              },
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

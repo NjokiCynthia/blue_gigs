@@ -319,6 +319,7 @@ class _EmployerState extends State<Employer> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * .5,
                   child: DropdownInput(
+
                     hintText: "Job Type",
                     options: [
                       "",
@@ -333,6 +334,7 @@ class _EmployerState extends State<Employer> {
                       "House Help"
                     ],
                     value: widget.jobType,
+
                     onChanged: (String? value) {
                       setState(() {
                         widget.jobType = value!;

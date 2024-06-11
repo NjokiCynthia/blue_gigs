@@ -66,7 +66,7 @@ class _UpdatePostState extends State<UpdatePost> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text("Please select the type of work you provider"),
+                Text("Please select the type of work you provide"),
                 SizedBox(
                   height: 20.0,
                 ),
