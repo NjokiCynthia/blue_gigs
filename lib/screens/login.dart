@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "BlueGigs",
+          "Mwangaza Household Support App",
           style: TextStyle(
             fontSize: 30.0,
             fontWeight: FontWeight.w900,

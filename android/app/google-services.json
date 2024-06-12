@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "360366577764",
-    "project_id": "household-support-82218",
-    "storage_bucket": "household-support-82218.appspot.com"
+    "project_number": "282109068782",
+    "project_id": "household-support-b3360",
+    "storage_bucket": "household-support-b3360.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:360366577764:android:91c3469d3dd52fa993a771",
+        "mobilesdk_app_id": "1:282109068782:android:90eb683dea09e8e0947aff",
         "android_client_info": {
           "package_name": "com.example.easy_rent"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs"
+          "current_key": "AIzaSyBMOWJjTE5rhWeVMOqcBHkM1zkzccf_XEA"
         }
       ],
       "services": {

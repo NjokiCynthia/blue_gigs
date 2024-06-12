@@ -42,18 +42,18 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs',
-    appId: '1:360366577764:android:91c3469d3dd52fa993a771',
-    messagingSenderId: '360366577764',
-    projectId: 'household-support-82218',
-    authDomain: 'household-support-82218.firebaseapp.com',
-    storageBucket: 'household-support-82218.appspot.com',
+    appId: '1:282109068782:android:90eb683dea09e8e0947aff',
+    messagingSenderId: '282109068782',
+    projectId: 'household-support-b3360',
+    authDomain: 'household-support-b3360.firebaseapp.com',
+    storageBucket: 'household-support-b3360.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAaU2slAUu8WKkYaxv2VBaO0JfkwEPU4hs',
-    appId: '1:360366577764:android:91c3469d3dd52fa993a771',
-    messagingSenderId: '360366577764',
-    projectId: 'household-support-82218',
-    storageBucket: 'household-support-82218.appspot.com',
+    appId: '1:282109068782:android:90eb683dea09e8e0947aff',
+    messagingSenderId: '282109068782',
+    projectId: 'household-support-b3360',
+    storageBucket: 'household-support-b3360.appspot.com',
   );
 }
